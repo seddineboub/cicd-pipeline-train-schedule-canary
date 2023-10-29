@@ -63,7 +63,7 @@ pipeline {
             steps {
                 input 'Deploy to Production salah ?'
                 milestone(1)
-                ubernetesDeploy(
+                kubernetesDeploy(
                   kubeconfigId: 'kubeconfig',
                   configs: 'train-schedule-kube-canary.yml',
                   enableConfigSubstitution: true
